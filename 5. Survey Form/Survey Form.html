@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="styles.css" />
+      </head>
+      <body>
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve</p>
+        <form id="survey-form">
+            <label id="name-label">
+                Name
+                <input id="name" type="text" placeholder="Enter your name" required>
+            </label>
+            <label id="email-label">
+                Email
+                <input id="email" type="email" placeholder="Enter your email" required>
+            </label>
+            <label id="number-label">
+                Age
+                <input id="number" type="number" placeholder="Enter your age" min="10" max="99" required>
+            </label>
+            <label id="dropdown-label">
+                Which option best describes your current role?
+                <select id="dropdown">
+                    <option disabled selected value>Select current role</option>
+                    <option value="student">Student</option>
+                    <option value="job">Full Time Job</option>
+                    <option value="learner">Full Time Learner</option>
+                    <option value="preferNot">Prefer not to say</option>
+                    <option value="other">Other</option>
+                </select>
+            </label>
+            <label id="radio-label">
+                Would you recommend us to a friend?
+                <div>
+                    <input name="user-recommend" value="definitely" type="radio" id="definitely" class="input-radio">
+                    <label for="definitely">Definitely</label>
+                </div>
+                <div>
+                    <input name="user-recommend" value="maybe" type="radio" id="maybe" class="input-radio">
+                    <label for="maybe">Maybe</label>
+                </div>
+                <div>
+                    <input name="user-recommend" value="not-sure" type="radio" id="not-sure" class="input-radio">
+                    <label for="not-sure">Not sure</label>
+                </div>
+            </label>
+            <label id="checkbox-label">
+                What are your favorite features of ours?
+                <div>
+                    <input name="prefer" value="lessons" type="checkbox" id="lessons" class="input-checkbox">
+                    <label for="lessons">Lessons</label>
+                </div>
+                <div>
+                    <input name="prefer" value="projects" type="checkbox" id="projects" class="input-checkbox">
+                    <label for="projects">Projects</label>
+                </div>
+                <div>
+                    <input name="prefer" value="community" type="checkbox" id="community" class="input-checkbox">
+                    <label for="community">Community</label>
+                </div>
+                <div>
+                    <input name="prefer" value="openSource" type="checkbox" id="openSource" class="input-checkbox">
+                    <label for="openSource">Open Source</label>
+                </div>
+            </label>
+            <label id="textarea-label" >
+                Additional comments or suggestions?
+                <textarea id="textarea" placeholder="Enter your comment here..." rows="5" cols="30"></textarea>
+            </label>
+            <button type="submit" id="submit">Submit</button>
+        </form>
