@@ -138,6 +138,13 @@
     font-style: italic;
     color: var(--secondary-text);
   }
+
+  .welcome-section > p > sub {
+    font-size: 2rem;
+    font-weight: 200;
+    font-style: italic;
+    color: var(--secondary-text);
+  }
   
   .projects-section {
     text-align: center;
